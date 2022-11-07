@@ -43,9 +43,9 @@ ion-col {
 
 .button-64 {
   align-items: center;
-  background-image: linear-gradient(144deg, #ff1313, #db3a1e 50%, #f18117);
+  background-image: linear-gradient(144deg, #fc0e0e, #e63119, #f5851c, #fab12a);
   border: 0;
-  border-radius: 8px;
+  border-radius: 30px;
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
@@ -72,7 +72,7 @@ ion-col {
 .button-64 span {
   background-color: #05062d;
   padding: 10px 14px;
-  border-radius: 6px;
+  border-radius: 25px;
   // width: 90%;
   // height: 90%;
   transition: 300ms;
