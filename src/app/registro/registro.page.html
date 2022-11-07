@@ -31,10 +31,22 @@
         <ion-label>Confirmar senha: </ion-label>
         <ion-input placeholder="insira sua senha" type="password"></ion-input>
       </ion-item>
-    </ion-list>
-    <div class="center">
-      <ion-button routerLink="/tabs/tab1">salvar</ion-button>
-      <ion-button routerLink="/tabs/tab1">Voltar</ion-button>
+    </ion-list><hr>
+    <div>
+      <ion-grid>
+        <ion-row cclass="ion-justify-content-around">
+          <ion-col ize="12" size-sm>
+            <button class="button-64" role="button" routerLink="/tabs/tab1">
+              <span class="text">Salvar</span>
+            </button>
+          </ion-col>
+          <ion-col ize="12" size-sm>
+            <button class="button-64" role="button" routerLink="/tabs/tab1">
+              <span class="text">Voltar</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
   </div>
 </ion-content>

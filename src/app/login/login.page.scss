@@ -1,6 +1,18 @@
-.corpo{
-  margin: 2rem;
-  border: #e33b3b;
-  border-radius: 20px;
-  box-shadow: #b915157a 0px 0px 1px 0px, #ff060644 0px 2px 10px 2px;
+button {
+  margin: auto;
+  padding: 5px;
+}
+
+ion-grid {
+  padding: 5px 5px 10px 5px;
+}
+
+.forget {
+  ion-label {
+    margin: 0;
+  }
+}
+
+ion-list {
+  padding: 0px;
 }

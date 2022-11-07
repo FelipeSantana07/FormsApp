@@ -16,13 +16,44 @@
         <ion-label>Senha: </ion-label>
         <ion-input placeholder="insira sua senha" type="password"></ion-input>
       </ion-item>
+
+      <ion-label class="forget center">
+        <a href="">Esqueceu sua a senha?</a>
+      </ion-label>
     </ion-list>
 
-    <div class="center">
+    <!-- <div class="center">
       <ion-button routerLink="/tabs/tab1">entrar</ion-button>
       <ion-button>esqueceu a senha</ion-button>
       <ion-button routerLink="/registro">registrar</ion-button>
       <ion-button routerLink="/tabs/tab1">voltar</ion-button>
+    </div> -->
+    <div>
+      <ion-grid>
+        <ion-row cclass="ion-justify-content-around">
+          <ion-col ize="12" size-sm>
+            <button class="button-64" role="button" routerLink="/tabs/tab1">
+              <span class="text">Entrar</span>
+            </button>
+          </ion-col>
+
+          <ion-col ize="12" size-sm>
+            <button class="button-64" role="button" routerLink="/registro">
+              <span class="text">Registrar</span>
+            </button>
+          </ion-col>
+
+          <ion-col ize="12" size-sm>
+            <button class="button-64" role="button" routerLink="/tabs/tab1">
+              <span class="text">Voltar</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
   </div>
 </ion-content>
+
+<!-- <button class="button-64" role="button">
+  <span class="text">Esqueceu sua senha</span>
+</button> -->
