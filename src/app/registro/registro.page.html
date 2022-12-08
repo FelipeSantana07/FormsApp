@@ -1,52 +1,66 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registro</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="corpo">
-    <ion-list>
-      <ion-item>
-        <ion-label type="name">Nome: </ion-label>
-        <ion-input placeholder="insira seu nome"></ion-input>
-      </ion-item>
+  <form [formGroup]="formCadastro">
+    <div class="centro">
+      <div class="container">
+        <h1>Registro</h1>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input formControlName="nome"></ion-input>
+          <ng-container *ngFor="let erro of mensagens.nome">
+            <span class="msg-erro"
+            *ngIf="formCadastro.get('nome').hasError(erro.tipo) && (formCadastro.get('nome').dirty || formCadastro.get('nome').touched)">
+              {{erro.mensagem}}
+            </span>
+          </ng-container>
+        </ion-item>
 
-      <ion-item>
-        <ion-label type="">CPF: </ion-label>
-        <ion-input placeholder="XXX-XXX-XXX-XX"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="floating">CPF</ion-label>
+          <ion-input type="number" formControlName="cpf"></ion-input>
+          <ng-container *ngFor="let erro of mensagens.cpf">
+            <span class="msg-erro"
+            *ngIf="formCadastro.get('cpf').hasError(erro.tipo) && (formCadastro.get('cpf').dirty || formCadastro.get('cpf').touched)">
+              {{erro.mensagem}}
+            </span>
+          </ng-container>
+        </ion-item>
 
-      <ion-item>
-        <ion-label type="email">Email: </ion-label>
-        <ion-input placeholder="insira seu email"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+          <ng-container *ngFor="let erro of mensagens.email">
+            <span class="msg-erro"
+            *ngIf="formCadastro.get('email').hasError(erro.tipo) && (formCadastro.get('email').dirty || formCadastro.get('email').touched)">
+              {{erro.mensagem}}
+            </span>
+          </ng-container>
+        </ion-item>
 
-      <ion-item>
-        <ion-label>Senha: </ion-label>
-        <ion-input placeholder="insira sua senha" type="password"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" formControlName="senha"></ion-input>
+          <ng-container *ngFor="let erro of mensagens.senha">
+            <span class="msg-erro"
+            *ngIf="formCadastro.get('senha').hasError(erro.tipo) && (formCadastro.get('senha').dirty || formCadastro.get('senha').touched)">
+              {{erro.mensagem}}
+            </span>
+          </ng-container>
+        </ion-item>
 
-      <ion-item>
-        <ion-label>Confirmar senha: </ion-label>
-        <ion-input placeholder="insira sua senha" type="password"></ion-input>
-      </ion-item>
-    </ion-list><hr>
-    <div>
-      <ion-grid>
-        <ion-row cclass="ion-justify-content-around">
-          <ion-col ize="12" size-sm>
-            <button class="button-64" role="button" routerLink="/tabs/tab1">
-              <span class="text">Salvar</span>
-            </button>
-          </ion-col>
-          <ion-col ize="12" size-sm>
-            <button class="button-64" role="button" routerLink="/tabs/tab1">
-              <span class="text">Voltar</span>
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+        <ion-item>
+          <ion-label position="floating">Confirmar senha</ion-label>
+          <ion-input type="password" formControlName="confirmaSenha"></ion-input>
+          <ng-container *ngFor="let erro of mensagens.confirmaSenha">
+            <span class="msg-erro"
+            *ngIf="formCadastro.get('confirmaSenha').hasError(erro.tipo) && (formCadastro.get('confirmaSenha').dirty || formCadastro.get('confirmaSenha').touched)">
+              {{erro.mensagem}}
+            </span>
+          </ng-container>
+        </ion-item>
+
+        <ion-button expand="block" (click)="salvarCadastro()">SALVAR</ion-button>
+        <ion-button routerLink="/tabs/tab1">VOLTAR</ion-button>
+      </div>
     </div>
-  </div>
+  </form>
 </ion-content>

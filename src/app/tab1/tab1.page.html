@@ -1,28 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tab 1 </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <div class="corpo">
-
-    <div>
-      <h2 class="center">Seja bem-vindo</h2>
-      <ion-grid>
-        <ion-row cclass="ion-justify-content-around">
-          <ion-col  size-sm>
-            <button class="button-64" role="button" routerLink="/login">
-              <span class="text">Login</span>
-            </button>
-          </ion-col>
-          <ion-col  size-sm>
-            <button class="button-64" role="button" routerLink="/registro">
-              <span class="text">Registrar</span>
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
+<ion-content [fullscreen]="true" color="secondary">
+  <div class="center">
+  <div class="card">
+    <ion-button routerLink="/login" expand="block" color="secondary">Login</ion-button>
+    <ion-button routerLink="/registro" expand="block" color="secondary">Registro</ion-button>
+    <ion-button routerLink="/home" expand="block" color="secondary">Usuários</ion-button>
   </div>
+</div>
 </ion-content>

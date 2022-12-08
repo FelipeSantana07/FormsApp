@@ -25,62 +25,17 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-.center {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
+* {
+    font-family: 'Poppins', sans-serif;
 }
 
-ion-list {
-  border-radius: 20px;
-}
+ion-button{
 
-ion-col {
-  padding: 3px;
-}
+    height: 42px;
 
-.button-64 {
-  align-items: center;
-  background-image: linear-gradient(144deg, #fc0e0e, #e63119, #f5851c, #fab12a);
-  border: 0;
-  border-radius: 30px;
-  box-sizing: border-box;
-  color: #ffffff;
-  display: flex;
-  font-family: sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-}
+    --box-shadow: none;
+    --border-radius: 25px;
 
-.button-64:active,
-.button-64:hover {
-  outline: 0;
+    border: solid #260a42 4px;
+    border-radius: 20px;
 }
-
-.button-64 span {
-  background-color: #05062d;
-  padding: 10px 14px;
-  border-radius: 25px;
-  transition: 300ms;
-}
-
-.button-64:hover span {
-  background: none;
-}
-
-.corpo{
-  margin: 2rem;
-  border: #e33b3b;
-  border-radius: 20px;
-  box-shadow: #b915157a 0px 0px 1px 0px, #ff060644 0px 2px 10px 2px;
-}
-

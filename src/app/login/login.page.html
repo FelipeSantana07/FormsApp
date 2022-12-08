@@ -1,56 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="corpo">
-    <ion-list>
+  <div class="centro">
+    <div class="container">
       <ion-item>
-        <ion-label type="email">Email: </ion-label>
-        <ion-input placeholder="insira seu email"></ion-input>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input placeholder="insira seu e-mail" type="email"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label>Senha: </ion-label>
+        <ion-label position="floating">Senha</ion-label>
         <ion-input placeholder="insira sua senha" type="password"></ion-input>
       </ion-item>
 
-      <ion-label class="forget center">
-        <a href="">Esqueceu sua a senha?</a>
-      </ion-label>
-    </ion-list>
-
-    <div>
-      <ion-grid>
-        <ion-row cclass="ion-justify-content-around">
-          <ion-col ize="12" size-sm>
-            <button class="button-64" role="button" routerLink="/tabs/tab2">
-              <span class="text">Entrar</span>
-            </button>
-          </ion-col>
-
-          <ion-col ize="12" size-sm>
-            <button class="button-64" role="button" routerLink="/registro">
-              <span class="text">Registrar</span>
-            </button>
-          </ion-col>
-
-          <ion-col ize="12" size-sm>
-            <button class="button-64" role="button" routerLink="/tabs/tab1">
-              <span class="text">Voltar</span>
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <ion-button>Entrar</ion-button>
+      <ion-button routerLink="/registro">Registrar</ion-button>
+      <ion-button>Esqueceu a senha</ion-button>
+      <ion-button routerLink="/tabs/tab1">Voltar</ion-button>
     </div>
-    <ion-button color="secondary">
-      <span class="span">entrar</span>
-    </ion-button>
   </div>
 </ion-content>
-
-<!-- <button class="button-64" role="button">
-  <span class="text">Esqueceu sua senha</span>
-</button> -->

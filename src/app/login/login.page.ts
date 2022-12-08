@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,15 +7,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class LoginPage implements OnInit {
 
-  formLogin = this.formBuilder.group({
-    email:['']
-  });
-
-  constructor(private formBuilder: FormBuilder) {
-
-
-
-   }
+  constructor() {}
 
   ngOnInit() {
   }
