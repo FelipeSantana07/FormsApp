@@ -74,9 +74,41 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  //ocean blue
+  --ion-color-oceanblue: #243867;
+	--ion-color-oceanblue-rgb: 36,56,103;
+	--ion-color-oceanblue-contrast: #ffffff;
+	--ion-color-oceanblue-contrast-rgb: 255,255,255;
+	--ion-color-oceanblue-shade: #20315b;
+	--ion-color-oceanblue-tint: #3a4c76;
+
+  //sand purple
+	--ion-color-sandpurple: #6e5dcf;
+	--ion-color-sandpurple-rgb: 110,93,207;
+	--ion-color-sandpurple-contrast: #ffffff;
+	--ion-color-sandpurple-contrast-rgb: 255,255,255;
+	--ion-color-sandpurple-shade: #6152b6;
+	--ion-color-sandpurple-tint: #7d6dd4;
+
+  //paste rose
+	--ion-color-pasterose: #c27dfc;
+	--ion-color-pasterose-rgb: 194,125,252;
+	--ion-color-pasterose-contrast: #000000;
+	--ion-color-pasterose-contrast-rgb: 0,0,0;
+	--ion-color-pasterose-shade: #ab6ede;
+	--ion-color-pasterose-tint: #c88afc;
+
+  //cloud white
+	--ion-color-cloudwhite: #eaebed;
+	--ion-color-cloudwhite-rgb: 234,235,237;
+	--ion-color-cloudwhite-contrast: #000000;
+	--ion-color-cloudwhite-contrast-rgb: 0,0,0;
+	--ion-color-cloudwhite-shade: #cecfd1;
+	--ion-color-cloudwhite-tint: #ecedef;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
