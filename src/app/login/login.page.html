@@ -1,20 +1,30 @@
 <ion-content color="secondary">
-  <div class="centro">
-    <div class="container">
-      <ion-item>
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-title>
+        Login
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-list>
+      <ion-item lines="none" color="cloudwhite">
         <ion-label position="floating">E-mail</ion-label>
         <ion-input placeholder="insira seu e-mail" type="email"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item lines="none" color="cloudwhite">
         <ion-label position="floating">Senha</ion-label>
         <ion-input placeholder="insira sua senha" type="password"></ion-input>
       </ion-item>
+    </ion-list>
 
-      <ion-button>Entrar</ion-button>
-      <ion-button routerLink="/registro">Registrar</ion-button>
-      <ion-button>Esqueceu a senha</ion-button>
-      <ion-button routerLink="/tabs/tab1">Voltar</ion-button>
+    <div class="bot">
+      <ion-button expand="block" color="secondary">Entrar</ion-button>
+      <ion-button routerLink="/registro" expand="block" color="secondary"
+        >Registrar</ion-button
+      >
+      <ion-button routerLink="/tabs/tab1" expand="block" color="secondary"
+        >Voltar</ion-button
+      >
     </div>
-  </div>
 </ion-content>

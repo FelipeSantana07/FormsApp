@@ -1,26 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Usuários
-    </ion-title>
-
-    <ion-buttons>
-      <ion-button routerLink="/registro">
-        <ion-icon slot="icon-only" name="person-add-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-
-  </ion-toolbar>
-</ion-header>
-
 <ion-content color="secondary">
+  <ion-header [translucent]="true">
+    <ion-toolbar color="tertiary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/login"></ion-back-button>
+      </ion-buttons>
+      <ion-title> Usuários </ion-title>
+      <ion-buttons slot="end">
+        <ion-button routerLink="/registro">
+          <ion-icon slot="icon-only" name="person-add-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<!--
   <ion-item-sliding *ngFor="let user of listaUsuarios">
-
     <ion-item>
       <ion-label>
         <div>
           <h1>{{user.nome}}</h1>
-          <span style="float: right;">{{user.cpf}}</span>
+          <span style="float: right">{{user.cpf}}</span>
           <a href="mailto:{{user.email}}">{{user.email}}</a>
         </div>
       </ion-label>
@@ -31,5 +29,22 @@
         <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
       </ion-item-option>
     </ion-item-options>
-  </ion-item-sliding>
+  </ion-item-sliding> -->
+
+  <ion-grid *ngFor="let user of listaUsuarios">
+    <ion-row class="ion-align-items-center">
+      <ion-col size="8">
+        <span>{{user.cpf}}</span>
+        <h1>{{user.nome}}</h1>
+        <a href="mailto:{{user.email}}">{{user.email}}</a>
+      </ion-col>
+      <ion-col size="3" class="colbot">
+        <ion-button expand="block" color="danger" (click)="excluirCadastro(user.email)">
+          <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>

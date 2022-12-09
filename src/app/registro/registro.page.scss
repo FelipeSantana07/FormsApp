@@ -1,0 +1,23 @@
+ion-list{
+    border-radius: 20px;
+    margin: 20px;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    ion-item{
+        margin: 10px;
+        border-radius: 10px;
+    }
+}
+
+.bot{
+    margin: 20px;
+}
+
+
+.msg-erro{
+    color: red;
+}

@@ -30,7 +30,7 @@
 }
 
 ion-button{
-
+    margin: 12px 0;
     height: 42px;
 
     --box-shadow: none;
@@ -38,4 +38,8 @@ ion-button{
 
     border: solid #260a42 4px;
     border-radius: 20px;
+}
+
+ion-title{
+    text-align: center;
 }

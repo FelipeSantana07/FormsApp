@@ -1,0 +1,19 @@
+ion-grid {
+    background-color: aliceblue;
+    color: black;
+
+    h1 {
+        margin: 0;
+    }
+
+    ion-col {
+        .colbot {
+            text-align: center;
+            margin: auto;
+            }
+        }
+        ion-button{
+            height: 50px;
+            border: none;
+    }
+}
